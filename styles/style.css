@@ -8,12 +8,13 @@
   height: 9.6rem;
   /* Sticky header -> fixed height */
   padding: 0 4.8rem;
+  position: relative;
 }
 
 .main-nav-list {
   list-style: none;
   display: flex;
-  gap: 3.2rem;
+  gap: 4.8rem;
   align-items: center;
 }
 
@@ -52,6 +53,43 @@
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: var(--shade-one);
+}
+
+/* MOBILE NAV */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: var(--dark-color);
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 20;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
 }
 
 /* HERO SECTION */
@@ -223,8 +261,7 @@
 }
 
 .meals-content {
-  padding: 4.8rem;
-  padding-top: 3.2rem;
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
 
 .meal-tags {
@@ -376,10 +413,10 @@
 
 .plan--complete::after {
   content: 'Best Value';
+  text-transform: uppercase;
   position: absolute;
   top: 6%;
   right: -18%;
-  text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 700;
   background-color: #94d82d;
@@ -489,6 +526,7 @@
 .cta-imagebox {
   background-image: url('../img/eating.jpg');
   background-size: cover;
+  background-position: center;
   opacity: .7;
 }
 

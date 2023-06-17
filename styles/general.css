@@ -38,6 +38,7 @@
 html {
   /* font-size: 10px; */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -45,6 +46,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: var(--gray-color);
+  overflow-x: hidden;
 }
 
 .container {
@@ -222,6 +224,7 @@ strong {
   font-size: 1.8rem;
   gap: 1.6rem;
   transition: color 0.2s;
+  line-height: 1.2;
 }
 
 .list-icon {

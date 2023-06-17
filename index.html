@@ -5,14 +5,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Omnifood</title>
+  <meta name="description"
+    content="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs.">
+  <title>Omnifood &mdash; Never cook again!</title>
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/general.css">
+  <link rel="stylesheet" href="./styles/queries.css">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
+  <link rel="manifest" href="./manifest.webmanifest">
 </head>
 
 <body>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+  <script defer src="./scripts/script.js"></script>
   <header class="header">
     <a href="#">
       <img src="./img/omnifood-logo.png" alt="Omnifood logo" class="logo"></a>
@@ -25,6 +33,10 @@
         <li><a href="#cta" class="main-nav-link nav-cta">Try for free</a></li>
       </ul>
     </nav>
+    <button class="btn-mobile-nav">
+      <ion-icon name="menu-outline" class="icon-mobile-nav menu-icon"></ion-icon>
+      <ion-icon name="close-outline" class="icon-mobile-nav close-icon"></ion-icon>
+    </button>
   </header>
 
   <main>
@@ -37,8 +49,8 @@
             to
             your personal tastes and
             nutritional needs.</p>
-          <a href="#" class="btn btn--full margin-right-sm">Start eating well</a>
-          <a href="#" class="btn btn--outline">Learn more &darr;</a>
+          <a href="#pricing" class="btn btn--full margin-right-sm">Start eating well</a>
+          <a href="#how-it-works" class="btn btn--outline">Learn more &darr;</a>
           <div class="delivered-meals">
             <div class="delivered-img">
               <img src="./img/customers/customer-1.jpg" alt="Customer Photo">
@@ -52,7 +64,7 @@
           </div>
         </div>
         <div class="hero-img-box">
-          <img src="./img/hero.png" alt="Woman enjoying food, meals in storage container and food bowls on a table"
+          <img src="./img/hero.webp" alt="Woman enjoying food, meals in storage container and food bowls on a table"
             class="hero-img">
         </div>
       </div>
@@ -431,7 +443,7 @@
               <ion-icon name="logo-twitter" class="social-icon"></ion-icon>
             </a></li>
         </ul>
-        <p class="copyright">Copyright &copy; 2027 by Ali Almasi.<br>All rights reserved.</p>
+        <p class="copyright">Copyright &copy; <span class="year"></span> by Ali Almasi.<br>All rights reserved.</p>
       </div>
       <div class="address-col">
         <p class="footer-header">Contact us</p>
